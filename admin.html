@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPanel</title>
+    <style>
+        body {
+            background: rgb(64, 0, 255);
+            background: linear-gradient(94deg, rgba(64, 0, 255, 1) 0%, rgba(131, 165, 217, 1) 100%);
+        }
+        table {border-collapse: collapse; width: 800px;}
+        td {border: 2px solid #fff; text-align: center; color: #fff; font-size: 1.2rem; padding: 10px 0;}
+        main {display: flex; align-items: center; flex-direction: column; gap: 20px;}
+        img {width: 150px;}
+        input {padding: 5px; border: 0; outline: 0; border-radius: 5px;}
+        button {padding: 5px 10px; border: 0; outline: 0; border-radius: 5px; cursor: pointer; background-color: black; color: #fff;}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Surname">
+            <input type="text" placeholder="Age">
+            <input type="text" placeholder="Job">
+            <input type="text" placeholder="img">
+            <button onclick="addUser()">Add User</button>
+        </div>
+        <table></table>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
